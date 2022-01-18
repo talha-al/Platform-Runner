@@ -35,6 +35,11 @@ public class GameManager : MonoBehaviour
             startGame = true;
             startPanel.SetActive(false);
         }
+
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 
     public void GoToPaintWall()
